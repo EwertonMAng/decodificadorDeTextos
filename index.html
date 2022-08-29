@@ -4,13 +4,46 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Decodificador de Texto - Desafio Alura</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style-cod.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat&display=swap" rel="stylesheet">
+	
 </head>
+
 <body>
-	<label for="criptografar">Insira aqui o Texto que deseja Criptografar:</label>
-	<textarea id="criptografar" name="" rows="5" cols="33">Criptogratia</textarea>
-	<textarea></textarea>
-	<button></button>
-	<button></button>
+
+	<header>
+		<img class="logo-alura" src="vector.jpg" alt="Logo da Alura">
+		<p> Seja bem vindo ao Decodificador </p>
+
+	</header>
+	<main>
+
+		<section>
+			<textarea class="input-texto" cols="40" rows="6" placeholder="Digite aqui o texto que deseja criptografar"></textarea>
+			<div>
+				<p class="informativo">*apenas letras minúsculas e sem acento.</p>
+			</div>
+			<div class="botoes">
+				<button class="criptografar" onclick="btnEncriptar()">
+						Criptografar
+				</button>
+				<button class="descriptografar" onclick="btnDesencriptar()">
+						Descriptografar
+				</button>
+			</div>
+			</section>
+
+			<section>
+			<textarea class="mensagem" type="text" cols="30" rows="10" placeholder="Seu resultado aparecerá aqui."></textarea>
+		</section>	
+
+
+	</main>
+	<footer>
+		Feito por Ewerton Angelo Dev <a href="https://www.linkedin.com/in/ewerton-angelo-dev/">LinkedIN</a>
+	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>
