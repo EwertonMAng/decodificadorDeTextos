@@ -34,3 +34,21 @@ function desencriptar(stringDesencriptada){
     }
     return stringDesencriptada;
 }
+
+const btn = document.querySelector('.btn');
+const msgCopiada = document.querySelector('.mensagem');
+
+btn.addEventListener('click', copiaTexto);
+
+function copiaTexto() {
+
+    navigator.clipboard.writeText(msgCopiada.value)
+    btn.classList.add('ativo');
+    btn.innerText = 'Mensagem Copiada';
+
+}
+
+setInterval(()=>{
+    btn.classList.remove('ativo');
+    btn.innerText = 'Copiar Texto';
+}, 8000)
