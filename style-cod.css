@@ -159,9 +159,20 @@ footer {
 	
 }
 
-@media screen and (max-width: 480px){
-	body, html, header, h1, h2, .logo{
+@media screen and (max-width: 1180px) {
+body, html, header, h1, h2, .logo, main{
+		display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 10% 0;
+        height: 100%;
+	}
+.mensagem{
+		display:list-item
 		width: auto;
 	}
 
+footer {
+	width: 100%;
+	}
 }
